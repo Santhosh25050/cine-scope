@@ -1,0 +1,119 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="CineScope - Discover movies and build your watchlist.">
+
+    <title>CineScope | Movie Discovery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Cine<span>Scope.</span></a>
+
+        <nav>
+            <a href="#discover">Discover</a>
+            <a href="#watchlist">My Watchlist</a>
+        </nav>
+
+        <span class="header-badge">MOVIE CLUB</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="eyebrow">YOUR NEXT MOVIE STARTS HERE</p>
+
+            <h1>Find your next<br>
+                <span>favourite story.</span>
+            </h1>
+
+            <p class="hero-description">
+                Explore movies, discover new favourites,
+                and create your personal watchlist.
+            </p>
+
+            <a href="#discover" class="explore-btn">
+                Explore movies ↓
+            </a>
+        </section>
+
+        <section class="discover" id="discover">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE COLLECTION</p>
+                    <h2>Discover movies</h2>
+                </div>
+
+                <span id="movie-count">0 movies</span>
+            </div>
+
+            <div class="toolbar">
+
+                <label class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Search movies..."
+                        aria-label="Search movies"
+                    >
+                </label>
+
+                <select id="genre-filter" aria-label="Filter by genre">
+                    <option value="All">All genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Animation">Animation</option>
+                </select>
+
+            </div>
+
+            <div id="movie-grid" class="movie-grid"></div>
+
+            <p id="empty-message" class="empty-message" hidden>
+                No movies found. Try another search.
+            </p>
+
+        </section>
+
+        <section class="watchlist-section" id="watchlist">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SAVED FOR LATER</p>
+                    <h2>My watchlist</h2>
+                </div>
+
+                <span id="watchlist-count">0 saved</span>
+            </div>
+
+            <div id="watchlist-grid" class="watchlist-grid"></div>
+
+            <p id="watchlist-empty" class="empty-message">
+                Your watchlist is empty. Save a movie you like!
+            </p>
+
+        </section>
+
+        <footer>
+            <a href="#" class="logo">Cine<span>Scope.</span></a>
+            <p>Made for people who love stories.</p>
+            <p>© 2026 CineScope</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
+```
